@@ -37,10 +37,10 @@ public class l1t1 {
                 else l = m + 1;
             }
             c=r;
-            //while (a[b] < y && b < n) b++;1231412
+            //while (a[b] < y && b < n) b++;
            // System.out.printf("%d %d %d %d\n", n, l, b,c);
             if(c-b+1>0)System.out.printf("YES %d\n", c-b+1);
-            else System.out.printf("NO\n");
+            else System.out.print("NO\n");
         }
     }
 }
