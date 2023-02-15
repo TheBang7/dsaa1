@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class l1t1 {
@@ -8,7 +7,9 @@ public class l1t1 {
         n = input.nextInt();
         q = input.nextInt();
         int[] a = new int[n];
-        for (int i = 0; i < n; i++) a[i] = input.nextInt();
+        for (int i = 0; i < n; i++) {
+            a[i] = input.nextInt();
+        }
 //        for(int i=0;i<n;i++)
 //            for(int j=n-1;j>i;j--)
 //                if(a[j]<a[j-1]){
@@ -16,7 +17,7 @@ public class l1t1 {
 //                     a[j]=a[j-1];
 //                     a[j-1]=t;
 //                }
-        int x, y, l, r, m, b,c;
+        int x, y, l, r, m, b, c;
         for (int k = 1; k <= q; k++) {
             x = input.nextInt();
             y = input.nextInt();
@@ -24,8 +25,11 @@ public class l1t1 {
             r = n - 1;
             while (l <= r) {
                 m = (l + r) / 2;
-                if (x < a[m]) r = m - 1;
-                else l = m + 1;
+                if (x < a[m]) {
+                    r = m - 1;
+                } else {
+                    l = m + 1;
+                }
             }
             //System.out.println(r);
             b = r + 1;
@@ -33,14 +37,20 @@ public class l1t1 {
             r = n - 1;
             while (l <= r) {
                 m = (l + r) / 2;
-                if (y <= a[m]) r = m - 1;
-                else l = m + 1;
+                if (y <= a[m]) {
+                    r = m - 1;
+                } else {
+                    l = m + 1;
+                }
             }
-            c=r;
+            c = r;
             //while (a[b] < y && b < n) b++;
-           // System.out.printf("%d %d %d %d\n", n, l, b,c);
-            if(c-b+1>0)System.out.printf("YES %d\n", c-b+1);
-            else System.out.print("NO\n");
+            // System.out.printf("%d %d %d %d\n", n, l, b,c);
+            if (c - b + 1 > 0) {
+                System.out.printf("YES %d\n", c - b + 1);
+            } else {
+                System.out.print("NO\n");
+            }
         }
     }
 }
