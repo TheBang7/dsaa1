@@ -1,9 +1,9 @@
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class l1t1 {
     public static void main(String[] args) {
-        int n, q,t;
+        int n, q;
         Scanner input = new Scanner(System.in);
         n = input.nextInt();
         q = input.nextInt();
